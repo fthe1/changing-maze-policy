@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-title-ar="المتاهة المتغيرة · Franco" data-title-en="Changing Maze · Franco">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المتاهة المتغيرة · Franco</title>
+<meta name="description" content="Changing Maze (المتاهة المتغيرة) by Franco: game info, privacy policy and terms of use.">
+<meta name="theme-color" content="#120f24">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYyYzQiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjZjJjMzViIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYjg3NDFjIi8+PC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzNiMmQ3MiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE3MTIyZSIvPjwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcng9IjE1IiBmaWxsPSJ1cmwoI2IpIiBzdHJva2U9InVybCgjZykiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxwYXRoIGQ9Ik0xNCAxNGgzNnY4SDIydjhoMjB2OEgyMnYxMmgtOHpNMzAgNDZoMjB2NEgzMHoiIGZpbGw9InVybCgjZykiIG9wYWNpdHk9Ii45NSIvPgogIDxjaXJjbGUgY3g9IjQ0IiBjeT0iMzAiIHI9IjAiIGZpbGw9Im5vbmUiLz4KICA8cGF0aCBkPSJNNDYgNDBsNCA0LTQgNC00LTR6IiBmaWxsPSIjMmVlNmE2Ii8+CiAgPGNpcmNsZSBjeD0iMTgiIGN5PSIyNiIgcj0iMy4yIiBmaWxsPSIjZmZiMzRkIi8+Cjwvc3ZnPgo=" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>:root{
+  --bg:#120f24;--bg2:#1b1636;--card:#221c42;--line:rgba(255,215,140,.18);
+  --tx:#f3eedf;--mut:#b9b1cf;--gold:#f2c35b;--gold2:#d99a2b;--teal:#2ee6a6;
+  --rad:18px;--maxw:860px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(120% 70% at 50% -10%,#3a2a6a 0%,var(--bg) 55%) fixed,var(--bg);color:var(--tx);
+  font:16px/1.85 "Cairo","Inter",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+html[lang=en] body{font-family:"Inter","Cairo",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}
+a{color:var(--gold)}
+a:hover{color:#ffe08f}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+
+/* header */
+.top{position:sticky;top:0;z-index:5;background:rgba(18,15,36,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;min-height:62px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--tx);font-weight:800;margin-inline-end:auto;min-width:0}
+.brand .logo{width:36px;height:36px;flex:none}
+.brand span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+nav.links{display:flex;gap:4px}
+nav.links a{color:var(--mut);text-decoration:none;font-weight:700;font-size:14px;padding:7px 10px;border-radius:10px}
+nav.links a:hover,nav.links a[aria-current=page]{color:var(--tx);background:rgba(255,255,255,.07)}
+.lang{border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--tx);font:inherit;font-weight:800;font-size:13px;padding:6px 12px;border-radius:999px;cursor:pointer;flex:none}
+.lang:hover{border-color:var(--gold)}
+
+/* hero */
+.hero{text-align:center;padding:56px 0 30px}
+.hero .icon{width:112px;height:112px;margin:0 auto 18px;filter:drop-shadow(0 12px 30px rgba(242,195,91,.25))}
+.hero h1{margin:0;font-size:clamp(30px,7vw,46px);line-height:1.25;font-weight:900;
+  background:linear-gradient(180deg,#fff2c4,var(--gold) 55%,var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{color:var(--mut);margin:10px auto 0;max-width:560px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:22px 0 0}
+.chip{border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:999px;padding:4px 14px;font-size:14px;color:var(--mut)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:26px 0}
+.card{background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:var(--rad);padding:20px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--mut);font-size:15px}
+a.card{display:block;text-decoration:none;color:var(--tx);transition:border-color .2s,transform .2s}
+a.card:hover{border-color:var(--gold);transform:translateY(-2px)}
+a.card .go{display:inline-block;margin-top:10px;color:var(--gold);font-weight:800;font-size:14px}
+
+/* document pages */
+.doc{padding:34px 0 40px}
+.doc h1{font-size:clamp(26px,6vw,36px);margin:0 0 4px;font-weight:900;color:var(--gold)}
+.meta{color:var(--mut);font-size:14px;margin:0 0 22px}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:14px 18px;margin:0 0 26px}
+.toc b{display:block;margin-bottom:4px}
+.toc ol{margin:0;padding-inline-start:22px;columns:2;column-gap:28px}
+.toc li{font-size:14.5px;break-inside:avoid}
+.toc a{color:var(--mut);text-decoration:none}
+.toc a:hover{color:var(--gold)}
+.doc section{scroll-margin-top:80px;border-top:1px solid var(--line);padding:18px 0 4px}
+.doc h2{font-size:21px;margin:0 0 8px}
+.doc h3{font-size:17px;margin:14px 0 4px;color:#ffe3a3}
+.doc p,.doc li{color:#e3dcf0}
+.doc ul{padding-inline-start:22px;margin:6px 0 10px}
+.doc li{margin:4px 0}
+.note{background:rgba(46,230,166,.08);border:1px solid rgba(46,230,166,.3);border-radius:14px;padding:12px 16px;margin:12px 0}
+.tbl{width:100%;border-collapse:collapse;margin:8px 0 14px;font-size:14.5px}
+.tbl th,.tbl td{border:1px solid var(--line);padding:9px 10px;text-align:start;vertical-align:top}
+.tbl th{background:rgba(242,195,91,.1);color:#ffe3a3}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+footer{border-top:1px solid var(--line);color:var(--mut);font-size:14px;padding:22px 0 30px;text-align:center}
+footer nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+footer a{color:var(--mut)}
+
+/* language switching: content for the inactive language is hidden */
+html[lang=ar] [lang=en]:not(html),html[lang=en] [lang=ar]:not(html){display:none!important}
+
+@media (max-width:640px){
+  nav.links{display:none}
+  .toc ol{columns:1}
+  .hero{padding-top:40px}
+  .tbl{font-size:13.5px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#home"><img class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYyYzQiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjZjJjMzViIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYjg3NDFjIi8+PC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzNiMmQ3MiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE3MTIyZSIvPjwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcng9IjE1IiBmaWxsPSJ1cmwoI2IpIiBzdHJva2U9InVybCgjZykiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxwYXRoIGQ9Ik0xNCAxNGgzNnY4SDIydjhoMjB2OEgyMnYxMmgtOHpNMzAgNDZoMjB2NEgzMHoiIGZpbGw9InVybCgjZykiIG9wYWNpdHk9Ii45NSIvPgogIDxjaXJjbGUgY3g9IjQ0IiBjeT0iMzAiIHI9IjAiIGZpbGw9Im5vbmUiLz4KICA8cGF0aCBkPSJNNDYgNDBsNCA0LTQgNC00LTR6IiBmaWxsPSIjMmVlNmE2Ii8+CiAgPGNpcmNsZSBjeD0iMTgiIGN5PSIyNiIgcj0iMy4yIiBmaWxsPSIjZmZiMzRkIi8+Cjwvc3ZnPgo=" alt=""><span><span lang="ar">المتاهة المتغيرة</span><span lang="en">Changing Maze</span></span></a>
+  <nav class="links"><a href="#home" aria-current=page><span lang="ar">الرئيسية</span><span lang="en">Home</span></a><a href="#privacy"><span lang="ar">سياسة الخصوصية</span><span lang="en">Privacy Policy</span></a><a href="#terms"><span lang="ar">شروط الاستخدام</span><span lang="en">Terms of Use</span></a></nav>
+  <button class="lang" type="button" data-switch-lang aria-label="Switch language / تغيير اللغة"><span lang="ar">English</span><span lang="en">العربية</span></button>
+</div></header>
+
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="#home"><img class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYyYzQiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjZjJjMzViIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYjg3NDFjIi8+PC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzNiMmQ3MiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE3MTIyZSIvPjwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcng9IjE1IiBmaWxsPSJ1cmwoI2IpIiBzdHJva2U9InVybCgjZykiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxwYXRoIGQ9Ik0xNCAxNGgzNnY4SDIydjhoMjB2OEgyMnYxMmgtOHpNMzAgNDZoMjB2NEgzMHoiIGZpbGw9InVybCgjZykiIG9wYWNpdHk9Ii45NSIvPgogIDxjaXJjbGUgY3g9IjQ0IiBjeT0iMzAiIHI9IjAiIGZpbGw9Im5vbmUiLz4KICA8cGF0aCBkPSJNNDYgNDBsNCA0LTQgNC00LTR6IiBmaWxsPSIjMmVlNmE2Ii8+CiAgPGNpcmNsZSBjeD0iMTgiIGN5PSIyNiIgcj0iMy4yIiBmaWxsPSIjZmZiMzRkIi8+Cjwvc3ZnPgo=" alt=""><span><span lang="ar">المتاهة المتغيرة</span><span lang="en">Changing Maze</span></span></a><nav class="links"><a href="#home" data-r="home"><span lang="ar">الرئيسية</span><span lang="en">Home</span></a><a href="#privacy" data-r="privacy"><span lang="ar">سياسة الخصوصية</span><span lang="en">Privacy Policy</span></a><a href="#terms" data-r="terms"><span lang="ar">شروط الاستخدام</span><span lang="en">Terms of Use</span></a></nav><button class="lang" type="button" id="langBtn" aria-label="Switch language / تغيير اللغة"><span lang="ar">English</span><span lang="en">العربية</span></button></div></header>
+<main class="wrap">
+<section class="route" data-r="home">
+<section class="hero">
+  <img class="icon" src="assets/logo.svg" alt="">
+  <h1><span lang="ar">المتاهة المتغيرة</span><span lang="en">Changing Maze</span></h1>
+  <p class="sub" lang="ar">لعبة ألغاز متاهات تتغيّر جدرانها أثناء اللعب. اجمع العملات، تجنّب الفخاخ، ووصّل الجوهرة قبل أن ينتهي الوقت.</p>
+  <p class="sub" lang="en">A maze puzzle game whose walls shift while you play. Collect coins, dodge traps and reach the gem before time runs out.</p>
+  <div class="chips">
+    <span class="chip"><span lang="ar">المطوّر: Franco</span><span lang="en">Developer: Franco</span></span>
+    <span class="chip"><span lang="ar">أندرويد</span><span lang="en">Android</span></span>
+    <span class="chip"><span lang="ar">عربي · English</span><span lang="en">English · عربي</span></span>
+  </div>
+</section>
+
+<div class="grid">
+  <div class="card"><h3><span lang="ar">🧩 متاهات تتغيّر</span><span lang="en">🧩 Shifting mazes</span></h3><p lang="ar">جدران تومض ثم تتبدّل، ومراحل جليد وضباب وعواصف تجعل كل مرحلة مختلفة.</p><p lang="en">Walls flash then shift, with ice, fog and storm stages that make every level different.</p></div>
+  <div class="card"><h3><span lang="ar">🏆 مكافآت ومواسم</span><span lang="en">🏆 Rewards &amp; seasons</span></h3><p lang="ar">مهام يومية وعجلة حظ ورتب موسمية وخزنة أسرار.</p><p lang="en">Daily quests, a lucky wheel, seasonal ranks and a secrets vault.</p></div>
+  <div class="card"><h3><span lang="ar">📱 يعمل بدون حساب</span><span lang="en">📱 No account needed</span></h3><p lang="ar">تقدّمك محفوظ على جهازك، والجودة تُضبط تلقائياً حسب قوة هاتفك.</p><p lang="en">Your progress stays on your device, and graphics adapt automatically to your phone.</p></div>
+</div>
+
+<div class="grid">
+  <a class="card" href="#privacy"><h3><span lang="ar">🔒 سياسة الخصوصية</span><span lang="en">🔒 Privacy Policy</span></h3><p lang="ar">ما البيانات التي تتعامل معها اللعبة والإعلانات والإشعارات، وكيف تتحكم فيها.</p><p lang="en">What data the game, ads and notifications handle, and how you control it.</p><span class="go"><span lang="ar">اقرأ السياسة ←</span><span lang="en">Read the policy →</span></span></a>
+  <a class="card" href="#terms"><h3><span lang="ar">📜 شروط الاستخدام</span><span lang="en">📜 Terms of Use</span></h3><p lang="ar">قواعد استخدام اللعبة والعملات الافتراضية والإعلانات.</p><p lang="en">Rules for using the game, virtual currency and ads.</p><span class="go"><span lang="ar">اقرأ الشروط ←</span><span lang="en">Read the terms →</span></span></a>
+</div>
+
+<div class="card" style="margin-bottom:34px">
+  <h3><span lang="ar">👤 عن المطوّر</span><span lang="en">👤 About the developer</span></h3>
+  <p lang="ar">«المتاهة المتغيرة» من تطوير ونشر <b>Franco</b>. للتواصل: <a href="https://franco-games.franco1.workers.dev" target="_blank" rel="noopener">franco-games.franco1.workers.dev</a></p>
+  <p lang="en">“Changing Maze” is developed and published by <b>Franco</b>. Contact: <a href="https://franco-games.franco1.workers.dev" target="_blank" rel="noopener">franco-games.franco1.workers.dev</a></p>
+</div>
+</section>
+<section class="route" data-r="privacy" hidden><article class="doc" lang="ar"><h1>سياسة الخصوصية</h1><p class="meta">آخر تحديث: 31 أكتوبر 2026 · تاريخ السريان: 31 أكتوبر 2026</p><div class="note">نحترم خصوصيتك: اللعبة تعمل دون حساب، وتحفظ تقدّمك على جهازك. البيانات الوحيدة التي تغادر جهازك هي ما تحتاجه خدمات الإعلانات والإشعارات الموضّحة أدناه.</div><div class="toc"><b>المحتويات</b><ol><li><a href="#ar-1">من نحن</a></li><li><a href="#ar-2">الملخص السريع</a></li><li><a href="#ar-3">البيانات المحفوظة على جهازك فقط</a></li><li><a href="#ar-4">الإعلانات (Google AdMob وشركاؤه)</a></li><li><a href="#ar-5">الإشعارات (OneSignal وFirebase)</a></li><li><a href="#ar-6">الأذونات التي يطلبها التطبيق</a></li><li><a href="#ar-7">المشتريات</a></li><li><a href="#ar-8">كيف نستخدم المعلومات ومع من تُشارك</a></li><li><a href="#ar-9">الاحتفاظ بالبيانات وحذفها</a></li><li><a href="#ar-10">خصوصية الأطفال</a></li><li><a href="#ar-11">حقوقك</a></li><li><a href="#ar-12">الأمان</a></li><li><a href="#ar-13">التغييرات على هذه السياسة</a></li><li><a href="#ar-14">التواصل معنا</a></li></ol></div><section id="ar-1"><h2>1. من نحن</h2><p>لعبة «المتاهة المتغيرة» (Changing Maze) لعبة ألغاز متاهات لأجهزة أندرويد يطوّرها وينشرها المطوّر المستقل <b>Franco</b> (ويُشار إليه في هذه السياسة بـ«نحن»). معرّف التطبيق على Google Play: <code>com.franco.mazeverse.game</code>.</p>
+<p>توضح هذه السياسة ما المعلومات التي تتعامل معها اللعبة، وكيف تُستخدم، ومع من تُشارك، وما الخيارات المتاحة لك.</p></section><section id="ar-2"><h2>2. الملخص السريع</h2><ul>
+<li>اللعبة لا تطلب إنشاء حساب، ولا نطلب منك اسمك الحقيقي أو بريدك أو رقم هاتفك.</li>
+<li>تقدّمك وإعداداتك وصورتك الاختيارية تُحفظ <b>على جهازك فقط</b> ولا تُرسل إلينا.</li>
+<li>اللعبة مجانية وتعرض إعلانات عبر <b>Google AdMob</b> وشركائه (ومنهم Unity Ads)، وهذه الخدمات تجمع بيانات الجهاز ومعرّف الإعلانات لعرض الإعلانات وقياسها.</li>
+<li>قد تصلك إشعارات عبر <b>OneSignal</b> و<b>Firebase Cloud Messaging</b>، ويمكنك إيقافها في أي وقت.</li>
+<li>لا نبيع بياناتك، ولا نصل إلى الكاميرا أو الميكروفون أو جهات الاتصال أو موقعك الدقيق (GPS).</li>
+</ul></section><section id="ar-3"><h2>3. البيانات المحفوظة على جهازك فقط</h2><p>تحفظ اللعبة البيانات التالية داخل التخزين المحلي للتطبيق على جهازك (Local Storage وIndexedDB)، ولا تُرفع إلى أي خادم تابع لنا:</p>
+<ul>
+<li><b>التقدّم في اللعب:</b> المستويات، أفضل نتيجة، العملات الافتراضية، المشتريات داخل المتجر بالعملات الافتراضية، المهام والمكافآت اليومية، المواسم والرتب، والإحصاءات (مثل عدد مرات الفوز ووقت اللعب).</li>
+<li><b>الإعدادات:</b> اللغة، الصوت والموسيقى، مستوى الصعوبة، جودة الرسوم ومعدل الإطارات.</li>
+<li><b>الملف الشخصي داخل اللعبة:</b> اسم لاعب تختاره أنت (الافتراضي «لاعب») ورمز تعبيري أو <b>صورة اختيارية</b> تختارها من معرض الصور. الصورة تُقصّ وتُصغّر وتُحفظ على جهازك فقط.</li>
+<li><b>ملف صوتي اختياري:</b> إذا أضفت ملف تلاوة أو صوت من جهازك في الإعدادات، يُحفظ داخل التطبيق على جهازك فقط لتشغيله.</li>
+<li><b>لاعبو الجهاز وأكواد الدعوة:</b> قائمة اللاعبين ولوحة الصدارة في «جولة الأصدقاء» محفوظة على الجهاز نفسه.</li>
+<li><b>معلومات الأداء:</b> لضبط الجودة تلقائياً، تقرأ اللعبة على الجهاز عدد أنوية المعالج وتقدير الذاكرة وطراز معالج الرسوميات ومعدل تحديث الشاشة ونسبة البطارية. تُستخدم هذه القيم محلياً فقط ولا تُرسل إلى أي جهة.</li>
+</ul>
+<p>عند اختيار «مشاركة» أو «نسخ» لكود الدعوة، يُمرّر النص إلى نافذة المشاركة في نظامك أو الحافظة، وأنت من يختار التطبيق الذي يُرسل إليه.</p></section><section id="ar-4"><h2>4. الإعلانات (Google AdMob وشركاؤه)</h2><p>نستخدم <b>Google AdMob</b> (حزمة Google Mobile Ads SDK) لعرض الإعلانات، وتتضمن اللعبة أيضاً <b>Unity Ads</b> كشبكة إعلانية شريكة. قد تجمع هذه الخدمات تلقائياً وتعالج:</p>
+<ul>
+<li>معرّف الإعلانات في أندرويد (Advertising ID) وواجهات Android Privacy Sandbox (مثل Topics وAttribution) إذا كانت مفعّلة على جهازك.</li>
+<li>عنوان IP وما يُستنتج منه من موقع تقريبي (على مستوى الدولة أو المدينة).</li>
+<li>معلومات الجهاز: الطراز، نظام التشغيل، اللغة، نوع الشبكة، معرّفات التطبيق.</li>
+<li>التفاعل مع الإعلانات: مرات الظهور والنقر، وبيانات الأعطال والتشخيص الخاصة بحزمة الإعلانات.</li>
+</ul>
+<p>تُستخدم هذه البيانات لعرض الإعلانات وتخصيصها وقياس أدائها ومنع الاحتيال. هذه الخدمات تعالج البيانات وفق سياساتها:</p>
+<ul>
+<li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google</a> · <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">كيف تستخدم Google البيانات من تطبيقات شركائها</a></li>
+<li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">سياسة خصوصية Unity</a></li>
+</ul>
+<p><b>تحكّمك:</b> يمكنك إعادة تعيين معرّف الإعلانات أو حذفه من إعدادات أندرويد (الإعدادات ← الخصوصية ← الإعلانات)، وإيقاف الإعلانات المخصصة. في المناطق التي يشترط فيها القانون موافقتك (مثل الاتحاد الأوروبي والمملكة المتحدة)، قد يُعرض عليك طلب موافقة قبل عرض إعلانات مخصصة.</p></section><section id="ar-5"><h2>5. الإشعارات (OneSignal وFirebase)</h2><p>قد ترسل اللعبة إشعارات (مثل تذكير بالمكافأة اليومية أو التحديثات) عبر <b>OneSignal</b> و<b>Firebase Cloud Messaging</b> من Google. لتوصيل الإشعارات تعالج هذه الخدمات: رمز الإشعارات (Push Token)، ومعرّف تثبيت التطبيق، وطراز الجهاز ونظامه، واللغة، والمنطقة الزمنية، وحالة الإشعار (وصل/فُتح).</p>
+<p>يمكنك إيقاف الإشعارات في أي وقت من إعدادات أندرويد ← التطبيقات ← المتاهة المتغيرة ← الإشعارات. السياسات: <a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener">OneSignal</a> · <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase</a>.</p></section><section id="ar-6"><h2>6. الأذونات التي يطلبها التطبيق</h2><div class="tscroll"><table class="tbl"><tr><th>الإذن</th><th>الغرض</th></tr>
+<tr><td>الإنترنت وحالة الشبكة</td><td>تحميل الإعلانات وتوصيل الإشعارات.</td></tr>
+<tr><td>معرّف الإعلانات (AD_ID) وواجهات Privacy Sandbox</td><td>عرض الإعلانات وقياسها عبر AdMob وشركائه.</td></tr>
+<tr><td>الاهتزاز</td><td>اهتزاز خفيف عند أحداث اللعب (يمكن إيقافه من إعدادات اللعبة).</td></tr>
+<tr><td>التشغيل عند بدء الجهاز، الخدمات في الخلفية، منع السكون، شارة الأيقونة</td><td>تستخدمها مكتبات الإشعارات لتوصيل الإشعارات وعرض عدّاد على أيقونة التطبيق.</td></tr>
+<tr><td>الكتابة على التخزين الخارجي</td><td>إذن قديم تضيفه مكتبات التطبيق لإصدارات أندرويد القديمة؛ اللعبة لا تقرأ ملفاتك. اختيار صورة أو ملف صوتي يتم فقط عندما تختاره أنت بنفسك عبر منتقي الملفات في النظام.</td></tr>
+</table></div>
+<p>اللعبة <b>لا</b> تطلب أذونات الكاميرا أو الميكروفون أو الموقع الجغرافي الدقيق أو جهات الاتصال أو الرسائل.</p></section><section id="ar-7"><h2>7. المشتريات</h2><p>العملات والعناصر داخل اللعبة افتراضية وتُكسب باللعب. إذا أُتيحت مستقبلاً مشتريات بأموال حقيقية، فستتم بالكامل عبر نظام الفوترة في Google Play، ولا نتلقى نحن بيانات بطاقتك أو وسيلة الدفع.</p></section><section id="ar-8"><h2>8. كيف نستخدم المعلومات ومع من تُشارك</h2><ul>
+<li>نستخدم البيانات المحلية فقط لتشغيل اللعبة وحفظ تقدّمك وإعداداتك.</li>
+<li>لا نملك خادماً يستقبل بيانات اللعب، ولا نبيع أي بيانات ولا نؤجرها.</li>
+<li>تُشارك البيانات الموضحة أعلاه مع مزوّدي الخدمات فقط (Google AdMob وUnity Ads وOneSignal وGoogle Firebase) للأغراض المذكورة، أو عندما يفرض القانون ذلك.</li>
+<li>تُنقل البيانات إلى مزوّدي الخدمات عبر اتصال مشفّر (HTTPS)، وقد تُعالج على خوادم خارج بلدك.</li>
+</ul></section><section id="ar-9"><h2>9. الاحتفاظ بالبيانات وحذفها</h2><ul>
+<li><b>البيانات المحلية:</b> تبقى على جهازك حتى تحذفها. يمكنك مسح كل شيء من داخل اللعبة: الإعدادات ← «إعادة التعيين»، أو بإلغاء تثبيت التطبيق، أو من إعدادات أندرويد ← التطبيقات ← مسح البيانات.</li>
+<li><b>بيانات الإعلانات والإشعارات:</b> يحتفظ بها مزوّدو الخدمات وفق سياساتهم. يمكنك إعادة تعيين معرّف الإعلانات أو حذفه، وإيقاف الإشعارات، كما يمكنك مراسلتنا لطلب المساعدة في حذف أي بيانات مرتبطة بتثبيتك.</li>
+</ul></section><section id="ar-10"><h2>10. خصوصية الأطفال</h2><p>اللعبة موجّهة لجمهور عام وليست موجّهة خصيصاً للأطفال دون 13 عاماً. لا نجمع عن قصد معلومات شخصية من الأطفال. إذا كنت وليّ أمر وتعتقد أن طفلك قدّم معلومات شخصية عبر اللعبة، تواصل معنا وسنساعدك في حذفها.</p></section><section id="ar-11"><h2>11. حقوقك</h2><p>بحسب القوانين المطبّقة في بلدك (مثل اللائحة الأوروبية GDPR أو قوانين ولاية كاليفورنيا)، قد يحق لك طلب الوصول إلى بياناتك أو تصحيحها أو حذفها أو الاعتراض على معالجتها أو سحب موافقتك. بما أن بيانات اللعب محفوظة على جهازك، يمكنك التحكم فيها مباشرة، ولطلبات بيانات الإعلانات والإشعارات يمكنك التواصل معنا أو مع مزوّد الخدمة المعني.</p></section><section id="ar-12"><h2>12. الأمان</h2><p>نعتمد على أنظمة الحماية في أندرويد التي تعزل بيانات كل تطبيق عن غيره، وعلى الاتصالات المشفّرة لدى مزوّدي الخدمات. لا توجد وسيلة نقل أو تخزين آمنة بنسبة 100%، لكننا نقلل البيانات إلى الحد الأدنى اللازم.</p></section><section id="ar-13"><h2>13. التغييرات على هذه السياسة</h2><p>قد نحدّث هذه السياسة عند إضافة ميزات أو خدمات جديدة. سننشر النسخة المحدّثة في هذه الصفحة مع تغيير تاريخ «آخر تحديث»، واستمرارك في استخدام اللعبة بعد التحديث يعني اطلاعك عليه.</p></section><section id="ar-14"><h2>14. التواصل معنا</h2><p>لأي سؤال أو طلب يخص الخصوصية، تواصل مع المطوّر <b>Franco</b> عبر موقعه: <a href="https://franco-games.franco1.workers.dev" target="_blank" rel="noopener">franco-games.franco1.workers.dev</a>، أو عبر صفحة اللعبة في متجر Google Play (قسم «تواصل مع المطوّر»).</p></section></article><article class="doc" lang="en"><h1>Privacy Policy</h1><p class="meta">Last updated: October 31, 2026 · Effective: October 31, 2026</p><div class="note">We respect your privacy: the game works without an account and keeps your progress on your device. The only data that leaves your device is what the advertising and notification services described below need.</div><div class="toc"><b>Contents</b><ol><li><a href="#en-1">Who we are</a></li><li><a href="#en-2">Summary</a></li><li><a href="#en-3">Data stored only on your device</a></li><li><a href="#en-4">Advertising (Google AdMob and partners)</a></li><li><a href="#en-5">Notifications (OneSignal and Firebase)</a></li><li><a href="#en-6">App permissions</a></li><li><a href="#en-7">Purchases</a></li><li><a href="#en-8">How information is used and shared</a></li><li><a href="#en-9">Data retention and deletion</a></li><li><a href="#en-10">Children’s privacy</a></li><li><a href="#en-11">Your rights</a></li><li><a href="#en-12">Security</a></li><li><a href="#en-13">Changes to this policy</a></li><li><a href="#en-14">Contact</a></li></ol></div><section id="en-1"><h2>1. Who we are</h2><p>“Changing Maze” (المتاهة المتغيرة) is a maze puzzle game for Android developed and published by the independent developer <b>Franco</b> (“we”, “us”). Google Play application ID: <code>com.franco.mazeverse.game</code>.</p>
+<p>This policy explains what information the game handles, how it is used, who it is shared with, and the choices you have.</p></section><section id="en-2"><h2>2. Summary</h2><ul>
+<li>No account is required. We never ask for your real name, email or phone number.</li>
+<li>Your progress, settings and optional photo are stored <b>only on your device</b> and are never sent to us.</li>
+<li>The game is free and shows ads through <b>Google AdMob</b> and its partners (including Unity Ads). These services collect device data and the advertising ID to serve and measure ads.</li>
+<li>You may receive notifications through <b>OneSignal</b> and <b>Firebase Cloud Messaging</b>; you can turn them off at any time.</li>
+<li>We do not sell your data, and the game does not access your camera, microphone, contacts or precise (GPS) location.</li>
+</ul></section><section id="en-3"><h2>3. Data stored only on your device</h2><p>The game keeps the following in the app’s local storage on your device (Local Storage and IndexedDB). None of it is uploaded to any server of ours:</p>
+<ul>
+<li><b>Game progress:</b> levels, best score, virtual coins, items bought with virtual coins, daily quests and rewards, seasons and ranks, and statistics (such as wins and play time).</li>
+<li><b>Settings:</b> language, sound and music, difficulty, graphics quality and frame rate.</li>
+<li><b>In-game profile:</b> a player name you choose (default “Player”) and an emoji or an <b>optional photo</b> you pick from your gallery. The photo is cropped, resized and saved on your device only.</li>
+<li><b>Optional audio file:</b> if you add a recitation or audio file from your device in Settings, it is stored inside the app on your device only so it can be played.</li>
+<li><b>Device players and invite codes:</b> the player list and leaderboard in “Friends Tour” live on the same device.</li>
+<li><b>Performance information:</b> to choose graphics settings automatically, the game reads on-device values such as CPU core count, approximate memory, graphics processor model, screen refresh rate and battery level. These values are used locally and are not sent anywhere.</li>
+</ul>
+<p>When you tap “Share” or “Copy” for an invite code, the text is passed to your system share sheet or clipboard, and you decide which app receives it.</p></section><section id="en-4"><h2>4. Advertising (Google AdMob and partners)</h2><p>We use <b>Google AdMob</b> (Google Mobile Ads SDK) to show ads, and the game also includes <b>Unity Ads</b> as a partner ad network. These services may automatically collect and process:</p>
+<ul>
+<li>Your Android Advertising ID and Android Privacy Sandbox APIs (such as Topics and Attribution) where enabled on your device.</li>
+<li>IP address and the approximate location derived from it (country or city level).</li>
+<li>Device information: model, operating system, language, network type and app identifiers.</li>
+<li>Ad interactions: impressions and clicks, plus crash and diagnostic data of the ads SDK.</li>
+</ul>
+<p>This data is used to deliver, personalise and measure ads and to prevent fraud. It is processed under these providers’ own policies:</p>
+<ul>
+<li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from partner apps</a></li>
+<li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a></li>
+</ul>
+<p><b>Your choices:</b> you can reset or delete your advertising ID and opt out of personalised ads in Android Settings (Settings → Privacy → Ads). Where the law requires consent (for example in the EEA and the UK), you may be asked for consent before personalised ads are shown.</p></section><section id="en-5"><h2>5. Notifications (OneSignal and Firebase)</h2><p>The game may send notifications (for example daily reward reminders or updates) through <b>OneSignal</b> and Google’s <b>Firebase Cloud Messaging</b>. To deliver them, these services process a push token, an app installation identifier, device model and OS, language, time zone, and notification status (delivered/opened).</p>
+<p>You can turn notifications off at any time in Android Settings → Apps → Changing Maze → Notifications. Policies: <a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener">OneSignal</a> · <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase</a>.</p></section><section id="en-6"><h2>6. App permissions</h2><div class="tscroll"><table class="tbl"><tr><th>Permission</th><th>Purpose</th></tr>
+<tr><td>Internet and network state</td><td>Loading ads and delivering notifications.</td></tr>
+<tr><td>Advertising ID (AD_ID) and Privacy Sandbox APIs</td><td>Serving and measuring ads through AdMob and its partners.</td></tr>
+<tr><td>Vibration</td><td>Light haptic feedback during play (can be turned off in game settings).</td></tr>
+<tr><td>Run at startup, background services, wake lock, app badge</td><td>Used by the notification libraries to deliver notifications and show a badge count on the app icon.</td></tr>
+<tr><td>Write external storage</td><td>A legacy permission added by the app’s libraries for old Android versions; the game does not read your files. A photo or audio file is only accessed when you pick it yourself through the system file picker.</td></tr>
+</table></div>
+<p>The game does <b>not</b> request camera, microphone, precise location, contacts or SMS permissions.</p></section><section id="en-7"><h2>7. Purchases</h2><p>Coins and items in the game are virtual and earned by playing. If real-money purchases are offered in the future, they will be handled entirely by Google Play Billing; we never receive your card or payment details.</p></section><section id="en-8"><h2>8. How information is used and shared</h2><ul>
+<li>Local data is used only to run the game and keep your progress and settings.</li>
+<li>We do not operate a server that receives gameplay data, and we do not sell or rent any data.</li>
+<li>The data described above is shared only with service providers (Google AdMob, Unity Ads, OneSignal and Google Firebase) for the stated purposes, or when required by law.</li>
+<li>Data sent to providers travels over encrypted connections (HTTPS) and may be processed on servers outside your country.</li>
+</ul></section><section id="en-9"><h2>9. Data retention and deletion</h2><ul>
+<li><b>Local data:</b> stays on your device until you delete it. You can erase everything in the game via Settings → “Reset”, by uninstalling the app, or via Android Settings → Apps → Clear data.</li>
+<li><b>Advertising and notification data:</b> retained by the providers under their policies. You can reset or delete your advertising ID and disable notifications, and you can contact us for help deleting any data linked to your installation.</li>
+</ul></section><section id="en-10"><h2>10. Children’s privacy</h2><p>The game is intended for a general audience and is not directed specifically at children under 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided personal information through the game, contact us and we will help remove it.</p></section><section id="en-11"><h2>11. Your rights</h2><p>Depending on the laws where you live (such as the EU GDPR or California law), you may have the right to access, correct or delete your data, object to processing, or withdraw consent. Because gameplay data is stored on your device, you control it directly; for advertising and notification data you can contact us or the relevant provider.</p></section><section id="en-12"><h2>12. Security</h2><p>We rely on Android’s app sandboxing, which isolates each app’s data, and on the encrypted connections used by our providers. No method of transmission or storage is 100% secure, but we keep data to the minimum needed.</p></section><section id="en-13"><h2>13. Changes to this policy</h2><p>We may update this policy when features or services change. The updated version will be posted on this page with a new “Last updated” date; continuing to use the game after an update means you have been informed of it.</p></section><section id="en-14"><h2>14. Contact</h2><p>For any privacy question or request, contact the developer <b>Franco</b> through the developer website: <a href="https://franco-games.franco1.workers.dev" target="_blank" rel="noopener">franco-games.franco1.workers.dev</a>, or through the game’s Google Play listing (“Developer contact”).</p></section></article></section>
+<section class="route" data-r="terms" hidden><article class="doc" lang="ar"><h1>شروط الاستخدام</h1><p class="meta">آخر تحديث: 31 أكتوبر 2026 · تاريخ السريان: 31 أكتوبر 2026</p><p>تنظّم هذه الشروط استخدامك للعبة «المتاهة المتغيرة» التي يطوّرها <b>Franco</b>.</p><div class="toc"><b>المحتويات</b><ol><li><a href="#ar-1">القبول</a></li><li><a href="#ar-2">الترخيص</a></li><li><a href="#ar-3">الاستخدام المسموح والممنوع</a></li><li><a href="#ar-4">العملات والعناصر الافتراضية</a></li><li><a href="#ar-5">الإعلانات والخدمات الخارجية</a></li><li><a href="#ar-6">المحتوى الذي تضيفه</a></li><li><a href="#ar-7">الملكية الفكرية</a></li><li><a href="#ar-8">التحديثات وتوفّر الخدمة</a></li><li><a href="#ar-9">إخلاء المسؤولية</a></li><li><a href="#ar-10">حدود المسؤولية</a></li><li><a href="#ar-11">الإنهاء</a></li><li><a href="#ar-12">تعديل الشروط</a></li><li><a href="#ar-13">القانون والتواصل</a></li></ol></div><section id="ar-1"><h2>1. القبول</h2><p>بتنزيل لعبة «المتاهة المتغيرة» أو استخدامها فإنك توافق على هذه الشروط وعلى <a href="#privacy">سياسة الخصوصية</a>. إذا لم توافق، يُرجى عدم استخدام اللعبة.</p></section><section id="ar-2"><h2>2. الترخيص</h2><p>يمنحك المطوّر <b>Franco</b> ترخيصاً شخصياً، غير حصري، غير قابل للتحويل وقابلاً للإلغاء لاستخدام اللعبة على أجهزتك لأغراض الترفيه غير التجارية، وفق هذه الشروط وشروط Google Play.</p></section><section id="ar-3"><h2>3. الاستخدام المسموح والممنوع</h2><p>يُمنع عليك:</p><ul>
+<li>نسخ اللعبة أو بيعها أو إعادة توزيعها أو تأجيرها، أو نشر نسخ معدّلة منها.</li>
+<li>الهندسة العكسية أو فك التجميع أو التلاعب ببيانات الحفظ أو العملات، إلا بالقدر الذي يسمح به القانون صراحة.</li>
+<li>استخدام برامج غش أو أدوات آلية أو أي وسيلة تضر باللعبة أو بالإعلانات (مثل النقر الوهمي على الإعلانات).</li>
+<li>استخدام اسم أو صورة ملف شخصي مسيئة أو تنتهك حقوق الآخرين عند مشاركتها.</li>
+</ul></section><section id="ar-4"><h2>4. العملات والعناصر الافتراضية</h2><p>العملات والجوائز والعناصر داخل اللعبة افتراضية، ليست لها قيمة نقدية، ولا يمكن استبدالها بأموال حقيقية أو نقلها خارج اللعبة. لأنها محفوظة على جهازك، قد تُفقد عند حذف التطبيق أو مسح بياناته أو استخدام «إعادة التعيين»، ولا نستطيع استعادتها.</p></section><section id="ar-5"><h2>5. الإعلانات والخدمات الخارجية</h2><p>تعرض اللعبة إعلانات من Google AdMob وشركائه، وقد تحتوي الإعلانات على روابط لمواقع أو تطبيقات لا نتحكم فيها. لسنا مسؤولين عن محتوى هذه الإعلانات أو الخدمات الخارجية، ويخضع استخدامك لها لشروطها الخاصة.</p></section><section id="ar-6"><h2>6. المحتوى الذي تضيفه</h2><p>إذا أضفت صورة أو ملفاً صوتياً من جهازك، فأنت تؤكد أن لديك الحق في استخدامه. يبقى هذا المحتوى على جهازك فقط ولا نطّلع عليه.</p></section><section id="ar-7"><h2>7. الملكية الفكرية</h2><p>جميع حقوق اللعبة، بما فيها التصميم والرسوم والأكواد والأصوات والاسم والشعار، مملوكة للمطوّر <b>Franco</b> أو لأصحابها المرخِّصين. لا يمنحك استخدام اللعبة أي حق ملكية فيها.</p></section><section id="ar-8"><h2>8. التحديثات وتوفّر الخدمة</h2><p>قد نحدّث اللعبة أو نغيّر ميزاتها أو نوقف بعضها أو نوقفها كلياً في أي وقت. قد تحتاج إلى تثبيت التحديثات لمواصلة اللعب.</p></section><section id="ar-9"><h2>9. إخلاء المسؤولية</h2><p>تُقدَّم اللعبة «كما هي» و«حسب توفّرها» دون أي ضمانات صريحة أو ضمنية، بما في ذلك ضمان خلوّها من الأخطاء أو عملها دون انقطاع على كل الأجهزة.</p></section><section id="ar-10"><h2>10. حدود المسؤولية</h2><p>إلى أقصى حد يسمح به القانون المطبّق، لا يتحمل المطوّر مسؤولية أي أضرار غير مباشرة أو عرضية أو تبعية، أو فقدان بيانات أو تقدّم، ناتجة عن استخدام اللعبة أو عدم القدرة على استخدامها.</p></section><section id="ar-11"><h2>11. الإنهاء</h2><p>ينتهي الترخيص تلقائياً إذا خالفت هذه الشروط. يمكنك التوقف عن استخدام اللعبة في أي وقت بحذفها من جهازك.</p></section><section id="ar-12"><h2>12. تعديل الشروط</h2><p>قد نعدّل هذه الشروط من وقت لآخر، وننشر النسخة المحدّثة في هذه الصفحة مع تحديث التاريخ. استمرارك في استخدام اللعبة بعد التعديل يعني قبولك له.</p></section><section id="ar-13"><h2>13. القانون والتواصل</h2><p>تخضع هذه الشروط للقوانين المعمول بها، ولا تمس حقوقك القانونية الإلزامية كمستهلك في بلدك. للتواصل: <a href="https://franco-games.franco1.workers.dev" target="_blank" rel="noopener">franco-games.franco1.workers.dev</a> أو صفحة اللعبة في Google Play.</p></section></article><article class="doc" lang="en"><h1>Terms of Use</h1><p class="meta">Last updated: October 31, 2026 · Effective: October 31, 2026</p><p>These Terms govern your use of “Changing Maze”, developed by <b>Franco</b>.</p><div class="toc"><b>Contents</b><ol><li><a href="#en-1">Acceptance</a></li><li><a href="#en-2">License</a></li><li><a href="#en-3">Acceptable use</a></li><li><a href="#en-4">Virtual currency and items</a></li><li><a href="#en-5">Ads and third-party services</a></li><li><a href="#en-6">Content you add</a></li><li><a href="#en-7">Intellectual property</a></li><li><a href="#en-8">Updates and availability</a></li><li><a href="#en-9">Disclaimer</a></li><li><a href="#en-10">Limitation of liability</a></li><li><a href="#en-11">Termination</a></li><li><a href="#en-12">Changes to these Terms</a></li><li><a href="#en-13">Governing law and contact</a></li></ol></div><section id="en-1"><h2>1. Acceptance</h2><p>By downloading or using “Changing Maze” you agree to these Terms and to the <a href="#privacy">Privacy Policy</a>. If you do not agree, please do not use the game.</p></section><section id="en-2"><h2>2. License</h2><p>The developer <b>Franco</b> grants you a personal, non-exclusive, non-transferable, revocable license to use the game on your devices for non-commercial entertainment, subject to these Terms and the Google Play Terms of Service.</p></section><section id="en-3"><h2>3. Acceptable use</h2><p>You must not:</p><ul>
+<li>Copy, sell, redistribute or rent the game, or publish modified versions of it.</li>
+<li>Reverse engineer, decompile, or tamper with save data or currencies, except where expressly permitted by law.</li>
+<li>Use cheats, bots or any means that harm the game or its ads (such as invalid ad clicks).</li>
+<li>Use an offensive profile name or picture, or one that infringes others’ rights, when sharing it.</li>
+</ul></section><section id="en-4"><h2>4. Virtual currency and items</h2><p>Coins, rewards and items in the game are virtual, have no monetary value, and cannot be exchanged for real money or transferred outside the game. Because they are stored on your device, they may be lost if you uninstall the app, clear its data or use “Reset”, and we cannot restore them.</p></section><section id="en-5"><h2>5. Ads and third-party services</h2><p>The game shows ads from Google AdMob and its partners. Ads may link to websites or apps we do not control. We are not responsible for the content of those ads or third-party services, and your use of them is governed by their own terms.</p></section><section id="en-6"><h2>6. Content you add</h2><p>If you add a photo or an audio file from your device, you confirm you have the right to use it. This content stays on your device only and we never see it.</p></section><section id="en-7"><h2>7. Intellectual property</h2><p>All rights in the game, including its design, graphics, code, sounds, name and logo, belong to the developer <b>Franco</b> or its licensors. Using the game does not give you any ownership rights in it.</p></section><section id="en-8"><h2>8. Updates and availability</h2><p>We may update the game, change or remove features, or discontinue it at any time. You may need to install updates to keep playing.</p></section><section id="en-9"><h2>9. Disclaimer</h2><p>The game is provided “as is” and “as available”, without warranties of any kind, express or implied, including that it will be error-free or work without interruption on every device.</p></section><section id="en-10"><h2>10. Limitation of liability</h2><p>To the maximum extent permitted by applicable law, the developer is not liable for any indirect, incidental or consequential damages, or loss of data or progress, arising from the use of or inability to use the game.</p></section><section id="en-11"><h2>11. Termination</h2><p>Your license ends automatically if you breach these Terms. You may stop using the game at any time by deleting it from your device.</p></section><section id="en-12"><h2>12. Changes to these Terms</h2><p>We may change these Terms from time to time and will post the updated version on this page with a new date. Continuing to use the game after a change means you accept it.</p></section><section id="en-13"><h2>13. Governing law and contact</h2><p>These Terms are governed by applicable law and do not affect your mandatory consumer rights in your country. Contact: <a href="https://franco-games.franco1.workers.dev" target="_blank" rel="noopener">franco-games.franco1.workers.dev</a> or the game’s Google Play listing.</p></section></article></section>
+</main>
+<footer><div class="wrap"><nav><a href="#home" data-r="home"><span lang="ar">الرئيسية</span><span lang="en">Home</span></a><a href="#privacy" data-r="privacy"><span lang="ar">سياسة الخصوصية</span><span lang="en">Privacy Policy</span></a><a href="#terms" data-r="terms"><span lang="ar">شروط الاستخدام</span><span lang="en">Terms of Use</span></a></nav><div><span lang="ar">© 2026 Franco · المتاهة المتغيرة</span><span lang="en">© 2026 Franco · Changing Maze</span></div></div></footer>
+<script>
+(function(){
+  var root=document.documentElement,titles={home:['المتاهة المتغيرة · Franco','Changing Maze · Franco'],privacy:['سياسة الخصوصية · المتاهة المتغيرة','Privacy Policy · Changing Maze'],terms:['شروط الاستخدام · المتاهة المتغيرة','Terms of Use · Changing Maze']};
+  function lang(){try{var s=localStorage.getItem('cm-lang');if(s==='ar'||s==='en')return s}catch(e){}return 'ar'}
+  function setLang(l){root.lang=l;root.dir=l==='ar'?'rtl':'ltr';try{localStorage.setItem('cm-lang',l)}catch(e){}route()}
+  function route(){
+    var r=(location.hash||'#home').slice(1);if(!titles[r])r='home';
+    document.querySelectorAll('.route').forEach(function(s){s.hidden=s.getAttribute('data-r')!==r});
+    document.querySelectorAll('nav.links a').forEach(function(a){a.toggleAttribute('aria-current',a.getAttribute('data-r')===r)});
+    var l=root.lang==='en'?1:0;document.title=titles[r][l];window.scrollTo(0,0);
+  }
+  document.getElementById('langBtn').onclick=function(){setLang(root.lang==='ar'?'en':'ar')};
+  root.lang=lang();root.dir=root.lang==='ar'?'rtl':'ltr';
+  addEventListener('hashchange',route);route();
+})();
+</script>
+</body>
+</html>
